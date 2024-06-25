@@ -4,6 +4,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip
 sudo apt install -y python3-venv
 sudo apt install git -y
+sudo apt install fish
 
 # REGION jetbrains toolbox installation
 sudo apt install libfuse2
