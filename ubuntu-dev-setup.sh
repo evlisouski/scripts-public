@@ -4,6 +4,12 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip
 sudo apt install -y python3-venv
 sudo apt install git -y
+
+sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+chsh -s $(which zsh)
+
+
 sudo apt install fish
 
 # REGION jetbrains toolbox installation
