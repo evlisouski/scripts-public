@@ -9,8 +9,9 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh -s $(which zsh)
 
-
 sudo apt install fish
+
+sudo apt install mc
 
 # REGION jetbrains toolbox installation
 sudo apt install libfuse2
@@ -44,7 +45,7 @@ echo "Autostart entry created at $AUTOSTART_LINK_PATH"
 # ENDREGION jetbrains toolbox installation
 
 sudo snap install code --classic
-sudo snap install pycharm-community --classic
+# sudo snap install pycharm-community --classic
 sudo snap install postman -y
 
 
