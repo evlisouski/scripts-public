@@ -46,7 +46,7 @@ echo "Autostart entry created at $AUTOSTART_LINK_PATH"
 
 sudo snap install code --classic
 # sudo snap install pycharm-community --classic
-sudo snap install postman -y
+sudo snap install postman
 
 
 echo "---------------------------------------"
@@ -73,4 +73,5 @@ echo "---------------------------------------"
 echo "Docker Installed"
 echo "---------------------------------------"
 
-
+# A Python CPU + GPU + memory profiler 
+pip install -U scalene
