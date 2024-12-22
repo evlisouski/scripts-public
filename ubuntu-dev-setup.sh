@@ -4,10 +4,23 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip
 sudo apt install -y python3-venv
 sudo apt install git -y
+sudo apt install tmux
 
+sudo apt install curl
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Установить zsh оболочкой по умолчанию
 chsh -s $(which zsh)
+# Плагнин с подсветкой ошибок
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# Плагин для автодополнения
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# Найти и добавить некоторые деволтные и установленные плагины
+sed -i '' 's/^plugins=(.*)$/plugins=(git zsh-syntax-highlighting zsh-autosuggestions pip python)/' ~/.zshrc
+source ~/.
+
+
+
 
 sudo apt install fish
 
